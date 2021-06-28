@@ -1,0 +1,46 @@
+@import 'src/assets/variables';
+
+.raid-progress-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #495057;
+
+  p {
+    margin: 0;
+  }
+}
+
+.raid-progress-content {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  background-color: #495057;
+  height: 5px;
+  margin-top: 6px;
+  align-items: center;
+}
+
+.raid-progress-step {
+  display: block;
+  z-index: 3;
+  border: 6px solid $section-color;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: #495057;
+  background-color: #495057;
+
+  &.killed {
+    background-color: $contrast-color-high;
+  }
+}
+
+.step-tooltip {
+  display: flex;
+  flex-direction: column;
+}
+
+.raid-progress-container {
+  margin-bottom: 20px;
+}
