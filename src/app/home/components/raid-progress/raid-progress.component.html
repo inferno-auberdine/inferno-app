@@ -1,0 +1,16 @@
+<div class="raid-progress-container">
+  <div class="raid-progress-header">
+    <p>{{raid.name}}</p>
+    <span>{{progression}}/{{raid.bosses?.length || 0}}</span>
+  </div>
+  <div class="raid-progress-content">
+    <div *ngFor="let boss of raid.bosses">
+      <ng-template #tooltip class="step-tooltip">
+        <img class="d-block" *ngIf="boss.picture" [src]="boss.picture" [alt]="boss.name">
+        <span class="d-block">{{boss.name}}</span>
+      </ng-template>
+      <div [tooltip]="tooltip" class="raid-progress-step cursor-pointer" [class.killed]="boss.killed"></div>
+    </div>
+  </div>
+</div>
+
