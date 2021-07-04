@@ -16,7 +16,7 @@ export class RaidService {
       bosses: [{
         name: 'Quartiers des serviteurs',
         picture: 'https://wow.zamimg.com/images/wow/journal/ui-ej-boss-servant-quarters.png',
-        killed: false
+        killed: true
       }, {
         name: 'Attumen le Veneur',
         picture: 'https://wow.zamimg.com/images/wow/journal/ui-ej-boss-attumen-the-huntsman.png',
