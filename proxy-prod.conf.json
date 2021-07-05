@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://inferno-api.herokuapp.com/api",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
