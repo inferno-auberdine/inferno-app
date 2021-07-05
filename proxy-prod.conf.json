@@ -1,6 +1,6 @@
 {
   "/api": {
-    "target": "https://inferno-api.herokuapp.com/api",
+    "target": "https://inferno-api.herokuapp.com",
     "secure": false,
     "changeOrigin": true,
     "logLevel": "debug"
