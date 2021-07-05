@@ -71,7 +71,7 @@
           "configurations": {
             "production": {
               "browserTarget": "inferno-app:build:production",
-              "proxyConfig": "src/proxy-prod.conf.json"
+              "proxyConfig": "proxy-prod.conf.json"
             }
           }
         },
