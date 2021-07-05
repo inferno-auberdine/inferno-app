@@ -70,8 +70,7 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "inferno-app:build:production",
-              "proxyConfig": "proxy-prod.conf.json"
+              "browserTarget": "inferno-app:build:production"
             }
           }
         },
