@@ -1,4 +1,4 @@
-import {environment} from '../../../environments/environment';
+import {environment} from '../../../../environments/environment';
 
 export class Uris {
   static readonly RAIDS = class {

@@ -15,9 +15,12 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.raidService.getAll().subscribe(
-      raids => this.raids = raids
-    );
+    this.raidService
+      .getAll()
+      .subscribe(
+        raids => this.raids = raids,
+        err => console.log(err) // TODO : améliorer la gestion des erreurs (toasts ?)
+      );
   }
 
 }

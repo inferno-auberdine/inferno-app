@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Observable, of} from 'rxjs';
+import {Observable} from 'rxjs';
 import {Raid} from '../models/raid';
 import {HttpClient} from '@angular/common/http';
 import {Uris} from '../models/uris';

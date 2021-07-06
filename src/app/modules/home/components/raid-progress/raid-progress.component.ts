@@ -24,12 +24,11 @@ export class RaidProgressComponent implements OnInit {
       .length;
     // Il faut forcer le chargement des images de boss pour que le tooltip s'affiche correctement
     this.preloadImages = this.raid.bosses.map(boss => {
-        const image = new Image();
-        image.src = boss.picture;
-        image.alt = boss.name;
-        return image;
-      }
-    );
+      const image = new Image();
+      image.src = boss.picture;
+      image.alt = boss.name;
+      return image;
+    });
   }
 
 }
