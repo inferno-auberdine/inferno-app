@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { RaidProgressListComponent } from './raid-progress-list.component';
+import {RaidProgressListComponent} from './raid-progress-list.component';
 
 describe('RaidProgressListComponent', () => {
   let component: RaidProgressListComponent;

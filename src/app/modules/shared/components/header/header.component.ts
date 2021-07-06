@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { faDiscord } from '@fortawesome/free-brands-svg-icons';
+import {Component, OnInit} from '@angular/core';
+import {faDiscord} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-header',
