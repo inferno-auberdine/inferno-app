@@ -3,14 +3,17 @@ import {CommonModule} from '@angular/common';
 import {HeaderComponent} from './components/header/header.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {HttpClientModule} from '@angular/common/http';
+import {InfernoCardComponent} from './components/inferno-card/inferno-card.component';
 
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
+    InfernoCardComponent
   ],
   exports: [
-    HeaderComponent
+    HeaderComponent,
+    InfernoCardComponent
   ],
   imports: [
     CommonModule,

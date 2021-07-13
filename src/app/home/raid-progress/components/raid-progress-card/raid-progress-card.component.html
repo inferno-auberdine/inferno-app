@@ -1,0 +1,5 @@
+<app-inferno-card title="Inferno" subtitle="Progress">
+  <ng-container *ngFor="let raid of raids">
+    <app-raid-progress [raid]="raid"></app-raid-progress>
+  </ng-container>
+</app-inferno-card>

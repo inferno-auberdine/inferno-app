@@ -1,9 +1,6 @@
 @import 'src/assets/variables';
 
 .raid-progress-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   color: #495057;
 
   p {
@@ -12,8 +9,6 @@
 }
 
 .raid-progress-content {
-  display: flex;
-  justify-content: space-between;
   z-index: 1;
   background-color: #495057;
   height: 5px;

@@ -1,0 +1,30 @@
+@import 'src/assets/variables';
+
+.card {
+  background-color: $section-color;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background: linear-gradient(135deg, $contrast-color-high 20%, $contrast-color-low 40%, $section-color 51%);
+  padding: 20px;
+  color: $theme-color-high;
+  border: none;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 28px;
+}
+
+.card-subtitle {
+  line-height: .6;
+  text-shadow: 3px 3px 6px #000;
+  color: $theme-color-high!important;
+  font-size: 2rem;
+}
+
+.card-text {
+  padding: 20px;
+  width: 100%;
+}
