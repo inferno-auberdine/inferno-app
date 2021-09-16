@@ -1,5 +1,16 @@
 <app-inferno-card title="Inferno" subtitle="Progress">
-  <ng-container *ngFor="let raid of raids">
-    <app-raid-progress [raid]="raid"></app-raid-progress>
+  <ng-container *ngIf="isLoading else displayProgression">
+    <div class="d-flex justify-content-center mt-5 mb-4 ">
+      <div class="la-ball-elastic-dots la-2x">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
   </ng-container>
+  <ng-template #displayProgression>
+    <app-raid-progress *ngFor="let raid of raids" [raid]="raid"></app-raid-progress>
+  </ng-template>
 </app-inferno-card>

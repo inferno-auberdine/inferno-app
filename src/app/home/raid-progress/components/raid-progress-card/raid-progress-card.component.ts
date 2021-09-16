@@ -1,5 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Raid} from '../../../../shared/models/raid';
+import {RaidService} from '../../../../shared/services/raid.service';
+import {finalize} from 'rxjs/operators';
 
 @Component({
   selector: 'app-raid-progress-card',
@@ -8,13 +10,17 @@ import {Raid} from '../../../../shared/models/raid';
 })
 export class RaidProgressCardComponent implements OnInit {
 
-  @Input()
-  raids: Raid[];
+  raids: Raid[] = [];
+  isLoading = true;
 
-  constructor() {
+  constructor(private raidService: RaidService) {
   }
 
   ngOnInit(): void {
+    this.raidService
+      .getAll()
+      .pipe(finalize(() => this.isLoading = false))
+      .subscribe(raids => this.raids = raids);
   }
 
 }
