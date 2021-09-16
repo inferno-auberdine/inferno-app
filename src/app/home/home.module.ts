@@ -1,22 +1,22 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {HomeComponent} from './home.component';
-import {RaidProgressComponent} from './components/raid-progress/raid-progress.component';
 import {TooltipModule} from 'ngx-bootstrap/tooltip';
-import {RaidProgressListComponent} from './components/raid-progress-list/raid-progress-list.component';
 import {HomeRoutingModule} from './home-routing.module';
+import {SharedModule} from '../shared/shared.module';
+import {RaidProgressModule} from './raid-progress/raid-progress.module';
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
-    RaidProgressComponent,
-    RaidProgressListComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
     TooltipModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    RaidProgressModule,
+    SharedModule
   ]
 })
 export class HomeModule {

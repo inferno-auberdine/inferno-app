@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Raid} from '../../../shared/models/raid';
+import {Raid} from '../../../../shared/models/raid';
 
 @Component({
   selector: 'app-raid-progress',

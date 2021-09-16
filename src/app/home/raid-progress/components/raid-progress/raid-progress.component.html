@@ -1,9 +1,9 @@
 <div class="raid-progress-container">
-  <div class="raid-progress-header">
+  <div class="raid-progress-header d-flex align-item-center justify-content-between">
     <p>{{raid.name}}</p>
     <span>{{progression}}/{{raid.bosses?.length || 0}}</span>
   </div>
-  <div class="raid-progress-content">
+  <div class="raid-progress-content d-flex justify-content-between align-item-center m-">
     <div *ngFor="let boss of raid.bosses">
       <ng-template #tooltip class="step-tooltip">
         <img class="d-block" *ngIf="boss.picture" [src]="boss.picture" [alt]="boss.name">
