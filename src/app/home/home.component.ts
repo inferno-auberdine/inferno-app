@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Raid} from '../shared/models/raid';
-import {RaidService} from '../shared/services/raid.service';
 
 @Component({
   selector: 'app-home',
@@ -9,13 +7,10 @@ import {RaidService} from '../shared/services/raid.service';
 })
 export class HomeComponent implements OnInit {
 
-  raids: Raid[] = [];
-
-  constructor(private raidService: RaidService) {
+  constructor() {
   }
 
   ngOnInit(): void {
-    this.raidService.getAll().subscribe(raids => this.raids = raids);
   }
 
 }
